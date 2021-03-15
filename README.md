@@ -2,7 +2,7 @@
 
 I found that when I define variables in `BeforeDiscovery`, they not always avilable in `It` and `Describe`/`Context` blocks later - it depends on the host where you execute the script. I also found that variables defined in `BeforeDiscovery` available in `InModuleScope` only when you run the test in VSCode through its `Start Debugging` command (F5 key).
 
-I manually tested how different hosts execute these tests.
+I manually tested how different hosts execute these tests. Each run was a clean run, meaning I reopened the applications between runs.
 
 "Invoke-Pester" means I passed a file's path to the `Invoke-Pester` cmdlet. "Direct" means I just executed a test's .ps1 file, and in VSCode I ran it using the F5 key.
 
